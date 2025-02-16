@@ -19,8 +19,6 @@ function agregarAmigo() {
 }
     
 function listaAmigos() {
-    console.log("Entre a la lista");
-
     let lista = document.getElementById('listaAmigos');
     lista.innerHTML = ""; // Limpia la lista 
 
@@ -31,26 +29,19 @@ function listaAmigos() {
      }
 }
 
-function sortearAmigo() {
-    if (amigos.length <= 2) {
-       alert("Introduzca al menos 3 nombres para jugar");
-    } else {
-        for (let i = 0; i < amigos.length; i++) {
-            const ganador = Math.random(amigos.length);
-            alert("El ganador es: " + ganador)
-        }
-    }
- }
-
 function sotearAmigo() {
-    
-    console.log(amigos.length);
-    let posicion = Math.floor(Math.random()*amigos.length); //Tiene la posicion ganadora
-    let ganador = amigos[posicion];
-    alert("El ganador es: " + ganador)
-    borrarLista();
+    if (amigos.length <= 2) {
+        alert("Introduzca al menos 3 nombres para jugar");
+    } else {
+        console.log(amigos.length);
+        let posicion = Math.floor(Math.random()*amigos.length); //Tiene la posicion ganadora
+        let ganador = amigos[posicion];
+        alert("El ganador es: " + ganador)
+        borrarLista();
+    }  
 }
 
 function borrarLista() {
-    
+    let lista = document.getElementById('listaAmigos');
+    lista.innerHTML = ""; // Limpia la lista 
 }
