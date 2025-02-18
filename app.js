@@ -44,4 +44,7 @@ function sotearAmigo() {
 function borrarLista() {
     let lista = document.getElementById('listaAmigos');
     lista.innerHTML = ""; // Limpia la lista 
+    amigos = [''];
+    amigos.shift();
+    console.log(amigos);
 }
