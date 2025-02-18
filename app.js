@@ -21,6 +21,7 @@ function agregarAmigo() {
 function listaAmigos() {
     let lista = document.getElementById('listaAmigos');
     lista.innerHTML = ""; // Limpia la lista 
+    
 
      for (let i = 0; i < amigos.length; i++) { 
          let nuevoNombre = document.createElement('li');
@@ -44,4 +45,7 @@ function sotearAmigo() {
 function borrarLista() {
     let lista = document.getElementById('listaAmigos');
     lista.innerHTML = ""; // Limpia la lista 
+    amigos = [''];
+    amigos.shift();
+    console.log(amigos);
 }
