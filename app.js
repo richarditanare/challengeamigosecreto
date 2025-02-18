@@ -49,4 +49,3 @@ function borrarLista() {
     amigos.shift();
     console.log(amigos);
 }
-
