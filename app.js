@@ -48,4 +48,8 @@ function borrarLista() {
     amigos = [''];
     amigos.shift();
     console.log(amigos);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4520c5e221e366e112eea0aa0bc457176d4a644f
