@@ -20,10 +20,10 @@ Una aplicación web interactiva que permite a los usuarios crear una lista de no
 🚀 Cómo Usar
 --
 
-Ingresa el nombre de un amigo en el campo de texto
-Haz clic en "Adicionar" para agregar el nombre a la lista
-Repite el proceso para agregar más nombres
-Cuando estés listo, haz clic en "Sortear Amigo" para seleccionar un nombre al azar
+1. Ingresa el nombre de un amigo en el campo de texto (mínimo 2)
+2. Haz clic en "Adicionar" para agregar el nombre a la lista
+3. Repite el proceso para agregar más nombres
+4. Cuando estés listo, haz clic en "Sortear Amigo" para seleccionar un nombre al azar
 
 🛠️ Tecnologías Utilizadas
 --
