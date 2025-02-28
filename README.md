@@ -46,8 +46,10 @@ Abre el archivo index.html en tu navegador favorito
 Ejemplo de cómo se realiza el sorteo
 ```
 function sortearAmigo() {
-    const indiceAleatorio = Math.floor(Math.random() * listaAmigos.length);
-    return listaAmigos[indiceAleatorio];
+    let posicion = Math.floor(Math.random() * listaAmigos.length);
+    let ganador = amigos[posicion];
+    let resultado = document.getElementById('resultado');
+    resultado.innerHTML = `El ganador es: ${ganador}`;
 }
 ```
 📱 Capturas de Pantalla
