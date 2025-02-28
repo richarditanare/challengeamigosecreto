@@ -8,8 +8,10 @@ function agregarAmigo() {
     //Valida la entrada de datos
     if (nombre === '') {
         alert("Por favor, inserte un nombre."); 
+        return;
     } else if (amigos.includes(nombre)) {
         alert("Este nombre ya está en la lista.");
+        return;
     } else {
         amigos.push(nombre); //Se añade el nombre al array
         console.log(amigos);
@@ -33,18 +35,20 @@ function listaAmigos() {
 function sotearAmigo() {
     if (amigos.length <= 2) {
         alert("Introduzca al menos 3 nombres para jugar");
+        return;
     } else {
         console.log(amigos.length);
         let posicion = Math.floor(Math.random()*amigos.length); //Tiene la posicion ganadora
         let ganador = amigos[posicion];
-        alert("El ganador es: " + ganador)
+        let resultado = document.getElementById('resultado');
+        resultado.innerHTML = `El ganador es: ${ganador}`;
         borrarLista();
     }  
 }
 
 function borrarLista() {
     let lista = document.getElementById('listaAmigos');
-    lista.innerHTML = ""; // Limpia la lista 
+    lista.innerHTML = ""; // Limpia la lista
     amigos = [''];
     amigos.shift();
     console.log(amigos);
